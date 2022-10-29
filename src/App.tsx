@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import List from './components/List';
 import './App.css';
 import AddTolist from './components/AddToList';
+import UseStateComponent from './components/UseStateComponent';
 
 export interface IState {
   people: {
@@ -24,9 +25,11 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>people invited in my party</h1>
+      {/* <h1>people invited in my party</h1>
       <List people={people} />
-      <AddTolist people={people} setPeople={setPeople} />
+      <AddTolist people={people} setPeople={setPeople} /> */}
+      <h1>useState</h1>
+      <UseStateComponent></UseStateComponent>
     </div>
   );
 }
